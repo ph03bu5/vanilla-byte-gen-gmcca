@@ -3,7 +3,6 @@
 .idea
 .npmrc
 .npmignore
-index.ts
 
 scss/
 test/

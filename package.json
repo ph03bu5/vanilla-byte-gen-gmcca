@@ -1,6 +1,6 @@
 {
   "name": "vanillabyte-gen-gmcca",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CLI tools assisting development of GM CCA",
   "repository": "https://github.com/ph03bu5/vanilla-byte-gen-gmcca.git",
   "author": {
@@ -9,7 +9,7 @@
     "url": "https://vanillabyte.com"
   },
   "bin": {
-    "vb-gen": "index.js"
+    "gmcca-gen": "index.js"
   },
   "scripts": {
     "start": "node index"
