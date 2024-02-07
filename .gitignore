@@ -1,0 +1,5 @@
+# IDE Settings
+/.idea/
+
+# Node.js dependency
+/node_modules

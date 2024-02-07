@@ -1,0 +1,24 @@
+{
+  "name": "vanillabyte-gen-gmcca",
+  "version": "0.0.1",
+  "description": "CLI tools assisting development of GM CCA",
+  "repository": "https://github.com/ph03bu5/vanilla-byte-gen-gmcca.git",
+  "author": {
+    "name": "H. Young Cho",
+    "email": "unclecho@vanillabyte.com",
+    "url": "https://vanillabyte.com"
+  },
+  "bin": {
+    "vb-gen": "index.js"
+  },
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "enquirer": "^2.4.1",
+    "fs-extra": "^11.2.0"
+  }
+}
