@@ -6,6 +6,8 @@
 
 import React from 'react';
 
+import GmPage from '@components/layout/GmPage';
+
 import './$ObjName$.scss';
 
 interface $ObjName$Props {
@@ -37,10 +39,10 @@ const $ObjName$ = ({ children, ...rest }: $ObjName$Props) => {
   Part 6: Returning JSX
   ========================================================== */
   return (
-    <div className="$obj-name$" {...rest}>
+    <GmPage>
       <p>Hello $ObjName$ !!</p>
       <span>{children}</span>
-    </div>
+    </GmPage>
   );
 };
 

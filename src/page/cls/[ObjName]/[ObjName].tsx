@@ -1,5 +1,7 @@
 import React from 'react';
 
+import GmPage from '@components/layout/GmPage';
+
 import './$ObjName$.scss';
 
 interface $ObjName$Props {
@@ -133,10 +135,10 @@ export default class ObjName extends React.Component<$ObjName$Props, $ObjName$St
     const { children, ...rest } = this.props;
 
     return (
-      <div className="$obj-name$" {...rest}>
+      <GmPage>
         {this.renderHello()}
         <span>{children}</span>
-      </div>
+      </GmPage>
     );
   }
 }

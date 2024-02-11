@@ -22,7 +22,7 @@ const path = require('path');
     const confirm = await query.isYesOrNo(msg);
 
     if (confirm) {
-      generator.template(filename, `component/${compType}/[ObjName]`, selPath);
+      generator.template(filename, `${surfix.toLowerCase()}/${compType}/[ObjName]`, selPath);
     }
   } catch(error) {
     console.error(error);
