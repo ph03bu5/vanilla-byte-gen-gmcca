@@ -1,6 +1,6 @@
 {
   "name": "vanillabyte-gen-gmcca",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "CLI tools assisting development of GM CCA",
   "repository": "https://github.com/ph03bu5/vanilla-byte-gen-gmcca.git",
   "author": {
