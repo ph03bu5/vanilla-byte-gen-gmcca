@@ -8,13 +8,11 @@ import React from 'react';
 
 import GmPage from '@components/layout/GmPage';
 
-import './$ObjName$.scss';
-
 interface $ObjName$Props {
   [key: string]: any;
 }
 
-const $ObjName$ = ({ children, ...rest }: $ObjName$Props) => {
+const $ObjName$ = ({ ...rest }: $ObjName$Props) => {
   /* ==========================================================
   Part 1: Global States - 전역 상태 연동 hook 위치
   ========================================================== */
@@ -41,7 +39,6 @@ const $ObjName$ = ({ children, ...rest }: $ObjName$Props) => {
   return (
     <GmPage>
       <p>Hello $ObjName$ !!</p>
-      <span>{children}</span>
     </GmPage>
   );
 };

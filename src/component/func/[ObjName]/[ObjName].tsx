@@ -6,8 +6,6 @@
 
 import React from 'react';
 
-import GmPage from '@components/layout/GmPage';
-
 interface $ObjName$Props {
   [key: string]: any;
 }
