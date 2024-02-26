@@ -11,7 +11,7 @@ interface $ObjName$States {
   [key: string]: any;
 }
 
-export default class ObjName extends React.Component<$ObjName$Props, $ObjName$States> {
+export default class $ObjName$ extends React.Component<$ObjName$Props, $ObjName$States> {
   /* ==========================================================
   Part 1: Static properties and methods - 정적 속성과 정적 메소드
   ========================================================== */
@@ -19,7 +19,7 @@ export default class ObjName extends React.Component<$ObjName$Props, $ObjName$St
    * 정적 속성 혹은 상수값
    * (불필요시 삭제)
    */
-  private static instance: ObjName;
+  private static instance: $ObjName$;
 
   /**
    * 정적 메소드 - 컴포넌트 객체 생성과 상관 없이 컴포넌트에 관계된 유틸리티성 메소드 구현
@@ -27,7 +27,7 @@ export default class ObjName extends React.Component<$ObjName$Props, $ObjName$St
    */
   public static getInstance() {
     if (typeof this.instance === 'undefined') {
-      this.instance = new ObjName({});
+      this.instance = new $ObjName$({});
     }
 
     return this.instance;

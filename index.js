@@ -7,8 +7,6 @@ const path = require('path');
 
 (async () => {
   try {
-    const compType = await query.selectType();
-
     const isPage = await query.isYesOrNo('Are you place this component as a page?');
     const surfix = isPage ? 'Page' : 'Component';
 
@@ -18,11 +16,11 @@ const path = require('path');
     const srcRoot = path.join(prjRoot, 'src');
     const selPath = isPage ? path.join(srcRoot, 'pages') : await query.selectPath(srcRoot);
 
-    const msg = `Generating a ${compType === 'func' ? 'Function type' : 'Class type'} ${isPage ? 'page' : 'component'} with name of "${filename}" in ${selPath}.\n  Is it okay to proceed?`;
+    const msg = `Generating a 'Function type' ${isPage ? 'page' : 'component'} with name of "${filename}" in ${selPath}.\n  Is it okay to proceed?`;
     const confirm = await query.isYesOrNo(msg);
 
     if (confirm) {
-      generator.template(filename, `${surfix.toLowerCase()}/${compType}/[ObjName]`, selPath);
+      generator.template(filename, `${surfix.toLowerCase()}/func/[ObjName]`, selPath);
     }
   } catch(error) {
     console.error(error);

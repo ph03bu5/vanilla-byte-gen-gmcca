@@ -6,13 +6,13 @@
 
 import React from 'react';
 
-import './$ObjName$.scss';
+import GmPage from '@components/layout/GmPage';
 
 interface $ObjName$Props {
   [key: string]: any;
 }
 
-const $ObjName$ = ({ children, ...rest }: $ObjName$Props) => {
+const $ObjName$ = ({ ...rest }: $ObjName$Props) => {
   /* ==========================================================
   Part 1: Global States - 전역 상태 연동 hook 위치
   ========================================================== */
@@ -37,10 +37,9 @@ const $ObjName$ = ({ children, ...rest }: $ObjName$Props) => {
   Part 6: Returning JSX
   ========================================================== */
   return (
-    <div className="$obj-name$" {...rest}>
+    <GmPage>
       <p>Hello $ObjName$ !!</p>
-      <span>{children}</span>
-    </div>
+    </GmPage>
   );
 };
 
